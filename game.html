@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minor Project by Aamin Patel</title>
+    <link rel="stylesheet" href="all.css" />
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="header1">
+          <ul>
+            <li class="link-item"><a href="#">Future</a></li>
+            <li class="link-item"><a href="#">Quotes</a></li>
+            <li class="link-item"><a href="#">Jokes</a></li>
+            <li class="link-item"><a href="#">Facts</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="main">
+        <div class="main1">
+          
+          <div class="main11">
+            <div id="textbox">
+              <span class="gamescore"></span><span class="life"></span>
+
+              <img
+                src="road.jpg"
+                height="640px"
+                width="565px"
+                alt=""
+                id="roadimg"
+              />
+              <span id="jumpbox">
+                <img
+                  src="ncar2.png"
+                  height="195px"
+                  width="150px"
+                  style="z-index: -1"
+                  id="jumpboxcar"
+              /></span>
+              <span class="enemy"
+                ><img src="truck4.png" alt="" height="190px" width="150px"
+              /></span>
+              <span class="enemy"
+                ><img src="truck1.png" alt="" height="190px" width="150px"
+              /></span>
+              <span class="enemy"
+                ><img src="truck2.png" alt="" height="190px" width="150px"
+              /></span>
+              <span class="enemy"
+                ><img src="car2.png" alt="" height="190px" width="150px"
+              /></span>
+              <span class="enemy"
+                ><img src="ncar1.png" alt="" height="190px" width="150px"
+              /></span>
+              <span class="enemy"
+                ><img src="car1.png" alt="" height="190px" width="150px"
+              /></span>
+              <span class="enemy"
+                ><img src="car6.png" alt="" height="190px" width="150px"
+              /></span>
+              <span class="enemy"
+                ><img src="ncar3.png" alt="" height="190px" width="150px"
+              /></span>
+              <span class="enemy"
+                ><img src="car5.png" alt="" height="190px" width="150px"
+              /></span>
+              <span class="startgame">Click Start button to play the game</span>
+             
+            </div>
+
+            <p id="gameend"></p>
+            <button id="reset" onclick="rese()">New Game</button>
+            <button id="start" onclick="strt()">Start</button>
+           
+          </div>
+
+          <div class="main12">
+            <div class="main121">
+              <p>Select A Car!</p>
+              <section class="caroption">
+                <span class="choise"
+                  ><img
+                    src="speed5.png"
+                    height="160px"
+                    width="120px"
+                    alt=""
+                    id="optcar1"
+                    onclick="document.getElementById('jumpboxcar').src='speed5.png'"
+                  />
+                </span>
+                <span class="choise">
+                  <img
+                    src="speed2.png"
+                    height="140px"
+                    width="120px"
+                    alt=""
+                    id="optcar2"
+                    onclick="document.getElementById('jumpboxcar').src='speed2.png'"
+                  />
+                </span>
+                <span class="choise">
+                  <img
+                    src="speed3.png"
+                    height="140px"
+                    width="120px"
+                    id="optcar"
+                    alt=""
+                    onclick="document.getElementById('jumpboxcar').src='speed3.png'"
+                  />
+                </span>
+                <span class="choise">
+                  <img
+                    src="speed4.png"
+                    height="140px"
+                    width="120px"
+                    id="optcar"
+                    alt=""
+                    onclick="document.getElementById('jumpboxcar').src='speed4.png'"
+                  />
+                </span>
+              </section>
+    
+    
+
+            </div>
+
+            <div class="main122">
+              <button id="check" onclick="up()">UP</button><br />
+              <div class="main1221">
+                <button id="check" onclick="left()">LEFT</button>
+                <button id="check" onclick="right()">RIGHT</button>
+              </div>
+              <br /><button id="check" onclick="down()">DOWN</button><br />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="foot">
+        <div class="foot1">
+          ;
+          <ul>
+            <li class="social-link">
+              <a href="#">
+                <i class="fa-brands fa-instagram" style="color: #ffffff"> </i>
+              </a>
+            </li>
+            <li class="social-link">
+              <a href="#">
+                <i class="fa-brands fa-twitter" style="color: #ffffff"> </i>
+              </a>
+            </li>
+            <li class="social-link">
+              <a href="#">
+                <i class="fa-brands fa-telegram" style="color: #ffffff"> </i>
+              </a>
+            </li>
+            <li class="social-link">
+              <a href="#">
+                <i
+                  class="fa-brands fa-github"
+                  style="color: #ffffff; padding-right: -2px"
+                >
+                </i>
+              </a>
+            </li>
+            <li class="social-link">
+              <a href="#">
+                <i
+                  class="fa-brands fa-facebook fb"
+                  style="color: #ffffff; padding-right: 10px"
+                >
+                </i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot2">
+        <p>&copy;copyright:AAMIN_PATEL -- Front-End Developer.</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
